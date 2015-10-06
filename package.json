@@ -1,0 +1,20 @@
+{
+  "name": "ex15toheroku",
+  "version": "1.0.0",
+  "description": "Pirate Translator",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines":{
+    "node": "4.1.1"
+  },
+  "author": "Ryan Moy",
+  "license": "ISC"
+}

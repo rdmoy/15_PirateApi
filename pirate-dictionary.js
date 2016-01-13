@@ -180,7 +180,7 @@ module.exports.translateWord = function(englishWord){
 module.exports.translate = function(englishString){
 	var currentWord = "";
 	var pirateString = "";
-	for (i=0; i<englishString.length; i++){
+	for (var i=0; i<englishString.length; i++){
 		if (!this.isLetter(englishString[i])){
 			pirateString += this.translateWord(currentWord) + englishString[i];
 			currentWord = "";
@@ -190,13 +190,12 @@ module.exports.translate = function(englishString){
 		}
 	}
 	if (currentWord !== "") pirateString += this.translateWord(currentWord);
-	console.log(pirateString)
 	return pirateString
 }
 module.exports.applyCase = function (wordA, wordB) {
 	if (wordA !== wordA.toLowerCase()) {
 		var capWord = wordB[0].toUpperCase();
-		for (i=1; i<wordB.length; i++){
+		for (var i=1; i<wordB.length; i++){
 			capWord += wordB[i];
 		}
 		return capWord;
